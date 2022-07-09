@@ -29,7 +29,7 @@ nav {
     color: var(--secondary-font-color);
     text-decoration: none;
     font-size: 1rem;
-    display: none;
+    /* display: none; */
 }
 header {
     background-color: aqua;
@@ -47,6 +47,44 @@ main {
     margin: 0 auto;
     max-width: 1280px;
 }
+.corousel-links {
+    display: flex;
+    justify-content: center;
+  }
+
+  .carousel-dot {
+    background-color: black;
+    width: 16px;
+    height: 16px;
+    display: block;
+    border-radius: 50%;
+    margin: 10px;
+  }
+
+  .carousel-slide > div {
+    width: 100%;
+    background-color: rgb(68,68,68);
+    color: var(--secondary-font-color);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel-slide {
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .carousel-slide img {
+    width: 100%;
+    height: 100%;
+  }
 .Barras_progreso {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
