@@ -1,11 +1,19 @@
+:root {
+  --main-primary-color: rgb(0,68,0);
+  --secondary-font-color: rgb(167, 11, 11);
+  font-size: 16px;
+}
 nav {
-    background-color: orange;
+    background-color: rgb(0, 68, 0);
     grid-area: navbar;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+.navbar .Izquierda {
+  color: var(--secondary-font-color);
+}
 .navbar .Derecha .campos_importantes {
     color: var(--secondary-font-color);
     text-decoration: none;
@@ -17,24 +25,25 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    background-color: var(--secondary-font-color);
   }
 
   .footer {
       margin-top: auto;
+      background-color: var(--main-primary-color);
   }
 
-  .anime-content .show-items {
+  .Batallas-principales .encuentros-2011 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
-  .anime-content .show-items .img-container {
+  .Batallas-principales .encuentros-2011 .img-container {
     width: 100%;
-    /* esto es para acomodar imagenes cuando no son del mismo tamaño y poder acomodarlas*/
     max-height: 160px;
     overflow: hidden;
   }
-  .anime-content .show-items .img-container img {
+  .Batallas-principales .encuentros-2011 .img-container img {
     width: 100%;
   }
 
@@ -48,4 +57,38 @@ footer {
 .redes img {
     padding: 2px;
     width: 40px;
+}
+
+@media screen and (min-width: 768px){
+  .Batallas-principales .encuentros-2011 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    gap: 10px;
+    width: 80%;
+  }
+  
+  .Batallas-principales .encuentros-2011 .img-container {
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+  }
+
+  .navbar .Derecha .campos_importantes {
+    display:block;
+    
+  }
+  .navbar {
+    justify-content: space-between;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .Batallas-principales  h3 {
+    margin: 0 auto;
+    width: 70%;
+  }
 }
