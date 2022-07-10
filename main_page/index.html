@@ -99,15 +99,62 @@
     </main>
     <form action="/register" method="post">
         <h4 id="Contacto">Contacto</h4>
-        <section>
-
+        <section class="escrituras">
+            <div>
+                <label for="nombre">Nombre</label>
+                <input required type="text" id="nombre" name="nombre" placeholder="usuario">
+            </div>
+    
+            <div>
+                <label for="apellido">Apellido</label>
+                <input required type="text" name="apellido" id="apellido" placeholder="apellido usuario">
+            </div>
+    
+            <div>
+                <label for="email">Email</label>
+                <input required type="email" name="email" id="email" placeholder="email usuario">
+            </div>
+            
+            <div>
+                <label for="tel">Telefono</label>
+                <input required type="tel" name="tel" id="tel" placeholder="Telefono usuario">
+            </div>
+        </section>
+        <section class="botones">
+            <fieldset>
+                <div>
+                    <legend><h5>Como me conociste?</h5></legend>
+                </div>
+                <div>
+                    <label for="universidad">universidad</label>
+                    <input type="radio" name="fav" id="universidad" value="universidad">    
+                </div>
+                <div>
+                    <label for="keepcoding">keepcoding</label>
+                    <input type="radio" name="fav" id="keepcoding" value="keepcoding">
+                </div>
+                <div>
+                    <label for="colegio">colegio</label>
+                    <input type="radio" name="fav" id="colegio" value="colegio">
+                </div>
+                <div>
+                    <label for="Github">Github</label>
+                    <input type="radio" name="fav" id="Github" value="Github">
+                </div>
+            </fieldset>
+            <div>
+                <label for="gitt">git hub tag</label>
+                <input required type="gitt" name="gitt" id="gitt" pattern="^@[^\s]+">
+            </div> <hr>
         </section>
         <section>
-
+            <div>
+                <textarea name="" id="" cols="30" rows="10" maxlength="180"></textarea>
+            </div>
         </section>
-        <section>
-
-        </section>
+        <div>
+            <input type="submit" value="registrar">
+        </div>
     </form>
     <footer class="footer">
         <a href="https://www.facebook.com/Gonsitosan/" target="_blank" rel="noopener noreferrer" class="redes">
