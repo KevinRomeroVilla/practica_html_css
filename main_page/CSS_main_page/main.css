@@ -166,5 +166,9 @@ footer {
         font-size: 1rem;
         display: inline;
     }
+
+    .campos_importantes input[type=submit]:hover {
+        color: rgb(0,0,0)
+    }
     
   }
