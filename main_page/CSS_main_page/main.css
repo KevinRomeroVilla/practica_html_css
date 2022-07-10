@@ -1,6 +1,6 @@
 :root {
-    --main-primary-color: #4C4AE6;
-    --secondary-font-color: #fff;
+    --main-primary-color: rgb(0,68,0);
+    --secondary-font-color: rgb(167, 11, 11);
     font-size: 16px;
 }
 
@@ -14,22 +14,26 @@ body {
     "header header header"
     "main main main"
     "form form form"
-    "footer footer footer"
-    ;
+    "footer footer footer";
+    background-color: var(--secondary-font-color);
 }
 nav {
-    background-color: orange;
+    background-color: var(--main-primary-color);
     grid-area: navbar;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+.navbar .Izquierda {
+    color: var(--secondary-font-color);
+  }
+
 .navbar .Derecha .campos_importantes {
     color: var(--secondary-font-color);
     text-decoration: none;
     font-size: 1rem;
-    /* display: none; */
+    display: none;
 }
 header {
     grid-area: header;
@@ -116,6 +120,8 @@ progress {
 }
 form {
     grid-area: form;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .escrituras {
@@ -139,9 +145,26 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--main-primary-color);
 }
 
 .redes img {
     padding: 2px;
     width: 40px;
 }
+
+@media screen and (min-width: 768px){
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+    }
+    .navbar .Derecha .campos_importantes {
+        color: var(--secondary-font-color);
+        text-decoration: none;
+        font-size: 1rem;
+        display: inline;
+    }
+    
+  }
