@@ -1,0 +1,51 @@
+nav {
+    background-color: orange;
+    grid-area: navbar;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .Derecha .campos_importantes {
+    color: var(--secondary-font-color);
+    text-decoration: none;
+    font-size: 1rem;
+    display: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .footer {
+      margin-top: auto;
+  }
+
+  .anime-content .show-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .anime-content .show-items .img-container {
+    width: 100%;
+    /* esto es para acomodar imagenes cuando no son del mismo tamaño y poder acomodarlas*/
+    max-height: 160px;
+    overflow: hidden;
+  }
+  .anime-content .show-items .img-container img {
+    width: 100%;
+  }
+
+footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes img {
+    padding: 2px;
+    width: 40px;
+}
